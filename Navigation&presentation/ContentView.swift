@@ -9,8 +9,15 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            VStack {
+                Text("AAA")
+                NavigationLink("디테일뷰", destination: DetailView())
+            }
+            .navigationBarTitle(Text("View 1화면"))
+        }
     }
 }
 
